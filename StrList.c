@@ -99,10 +99,10 @@ char* StrList_firstData(const StrList* list) {
 void StrList_print(const StrList* list) {
     Node* current = list->head;
     while (current) {
-        printf("%s -> ", current->data);
+        printf("%s ", current->data);
         current = current->next;
     }
-    printf("NULL\n");
+    printf("\n");
 }
 
 // Function to print the word at a given index
