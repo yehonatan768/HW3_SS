@@ -98,7 +98,7 @@ char* StrList_firstData(const StrList* list) {
 // Function to print the StrList
 void StrList_print(const StrList* list) {
     Node* current = list->head;
-    if (head == NULL){
+    if (current == NULL){
         printf("");
     }
     else {
