@@ -98,11 +98,16 @@ char* StrList_firstData(const StrList* list) {
 // Function to print the StrList
 void StrList_print(const StrList* list) {
     Node* current = list->head;
-    while (current) {
-        printf("%s ", current->data);
-        current = current->next;
+    if (head == NULL){
+        printf("");
     }
-    printf("\n");
+    else {
+        while (current) {
+            printf("%s ", current->data);
+            current = current->next;
+        }
+        printf("\n");
+    }
 }
 
 // Function to print the word at a given index
