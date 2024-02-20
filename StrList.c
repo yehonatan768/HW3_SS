@@ -97,7 +97,7 @@ char* StrList_firstData(const StrList* list) {
 
 // Function to print the StrList
 void StrList_print(const StrList* list) {
-    if (list == NULL || list->head == NULL)
+    if (list == NULL || list->head == NULL) {
         printf("");
     }
     else {
