@@ -35,7 +35,6 @@ void StrList_free(StrList* list) {
             free(current);       // Free the node
             current = next;
         }
-        free(list); // Free the list itself
     }
 }
 
@@ -98,7 +97,7 @@ char* StrList_firstData(const StrList* list) {
 // Function to print the StrList
 void StrList_print(const StrList* list) {
     if (list == NULL || list->head == NULL) {
-        printf("");
+        printf("\n");
     }
     else {
         Node* current = list->head;
